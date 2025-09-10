@@ -1,0 +1,36 @@
+root{
+  --bg#0b1220; --bg2#0e172a; --fg#e6ebff; --muted#8ea0c2; --accent#3b82f6;
+  --green#22c55e; --chip#1b2440;
+}
+{box-sizingborder-box} html,body{height100%} body{margin0; backgroundlinear-gradient(180deg,var(--bg),var(--bg2)); colorvar(--fg); font-familyInter,system-ui,Segoe UI,Roboto,Arial,sans-serif;}
+.topbar{displayflex; justify-contentflex-start; padding10px 12px;}
+.wallet{displayflex; align-itemscenter; gap8px; backgroundrgba(255,255,255,0.08); border1px solid rgba(255,255,255,0.22); border-radius14px; padding6px 10px; backdrop-filter blur(6px);}
+.wallet .icon-btn{width24px;height24px;border-radius8px;border1px solid rgba(255,255,255,0.4);background#fff;color#111;font-weight700; cursorpointer; line-height1;}
+.game-wrap{positionrelative;max-width980px;margin0 auto;padding8px 12px 96px;}
+.chart-bg-grid{positionabsolute; inset0 0 120px 0; z-index0;backgroundlinear-gradient(to right, rgba(96,165,250,0.12) 1px, transparent 1px),linear-gradient(to bottom, rgba(96,165,250,0.12) 1px, transparent 1px);background-size 40px 40px; mask-image linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0.2));}
+#chart{positionrelative; z-index1; width100%; heightauto; displayblock; border-radius16px;}
+.live-x{positionabsolute; left16px; bottom160px; z-index2;padding4px 8px; font-size12px; colorvar(--fg);backgroundvar(--chip); border1px solid rgba(96,165,250,0.25); border-radius10px;}
+.history{positionrelative; z-index2; displayflex; gap6px; padding10px 6px; margin-top8px; overflow-xauto; scrollbar-widthnone;}
+.history-webkit-scrollbar{displaynone}.history .chip{backgroundvar(--chip); border1px solid rgba(96,165,250,0.25); padding6px 8px; border-radius10px; font-size12px; white-spacenowrap;}
+.play-btn{positionrelative; z-index2;width100%; padding14px 18px; margin-top8px;bordernone; border-radius14px;backgroundvar(--accent); color#fff; font-weight700; font-size18px; letter-spacing0.5px; box-shadow0 0 20px rgba(59,130,246,0.35); cursorpointer;}
+.modal{positionfixed; inset0; displayflex; align-itemsflex-end; justify-contentcenter; backgroundrgba(0,0,0,0.35); z-index20;}
+.hidden{displaynone !important;}
+.modal-sheet{width100%; max-width980px; backgroundrgba(17,24,39,0.9); border-top-left-radius16px; border-top-right-radius16px; border1px solid rgba(96,165,250,0.25); padding10px 14px 16px; backdrop-filter blur(10px);}
+.modal-handle{ width60px; height5px; backgroundrgba(255,255,255,0.2); border-radius6px; margin6px auto 10px;}
+.modal-title{text-aligncenter; font-weight700; letter-spacing1px; margin-bottom10px;}
+.tabs{displayflex; gap8px; justify-contentcenter; margin-bottom10px;}
+.tab{padding8px 12px; border-radius12px; border1px solid rgba(96,165,250,0.35); backgroundtransparent; colorvar(--fg); cursorpointer;}
+.tab.active{backgroundrgba(59,130,246,0.15); box-shadow0 0 16px rgba(59,130,246,0.25) inset;}
+.tab-content{padding4px 6px;}
+.input-label{displayblock; margin-bottom6px; colorvar(--muted);}
+#tonInput{width100%; padding12px 14px; border-radius12px; border1px solid rgba(96,165,250,0.35); backgroundrgba(2,6,23,0.6); colorvar(--fg); font-size16px;}
+.primary{width100%; margin-top10px; padding12px 14px; border-radius12px; bordernone; cursorpointer; backgroundvar(--green); color#06130a; font-weight800; letter-spacing0.4px; box-shadow0 0 18px rgba(34,197,94,0.35);}
+.gifts-grid{displaygrid; grid-template-columnsrepeat(4,1fr); gap8px; max-height220px; overflowauto; padding-bottom6px;}
+.gift{border1px solid rgba(96,165,250,0.3); border-radius12px; padding10px 6px; text-aligncenter; backgroundrgba(17,24,39,0.6); cursorpointer;}
+.gift.selected{outline2px solid var(--accent); box-shadow0 0 14px rgba(59,130,246,0.35);}
+.gift .gift-name{font-size12px; colorvar(--fg);}
+.gift .gift-val{font-size12px; colorvar(--muted); margin-top4px;}
+.cashout-btn{positionfixed; right16px; bottom120px; z-index10; width40px; height40px; border-radius14px; border1px solid rgba(96,165,250,0.4); backgroundrgba(59,130,246,0.2); color#fff; font-size18px; cursorpointer; backdrop-filter blur(6px);}
+.cashout-btndisabled{opacity0.4; cursornot-allowed;}
+.small-chip{ backgroundvar(--chip); } button{text-aligncenter;}
+style

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>Telegram Mini App Crash & Cases</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wallet" id="wallet">
+    <span id="balanceLabel">100.0 TON</span>
+    <button id="depositBtn" class="icon-btn" title="Deposit TON">+</button>
+  </div>
+</header>
+
+<main class="game-wrap">
+  <div class="chart-bg-grid"></div>
+  <canvas id="chart" width="900" height="420"></canvas>
+  <div class="live-x small-chip" id="liveX">1.00x</div>
+  <div class="history" id="history"></div>
+  <button id="playBtn" class="play-btn">PLAY</button>
+</main>
+
+<section id="betModal" class="modal hidden" role="dialog" aria-modal="true">
+  <div class="modal-sheet">
+    <div class="modal-handle"></div>
+    <div class="modal-title">BUY</div>
+    <div class="tabs">
+      <button class="tab active" data-tab="ton">TON</button>
+      <button class="tab" data-tab="gifts">Gifts</button>
+    </div>
+    <div class="tab-content" id="tonTab">
+      <label class="input-label" for="tonInput">Amount (TON)</label>
+      <input id="tonInput" type="number" inputmode="decimal" min="0.1" step="0.1" placeholder="e.g. 7" />
+      <button id="buyTonBtn" class="primary">BUY</button>
+    </div>
+    <div class="tab-content hidden" id="giftsTab">
+      <div id="giftsGrid" class="gifts-grid"></div>
+      <button id="buyGiftBtn" class="primary" disabled>BUY</button>
+    </div>
+  </div>
+</section>
+
+<button id="cashoutBtn" class="cashout-btn" disabled title="Cash Out">⟲</button>
+
+<script src="js/game.js"></script>
+</body>
+</html>
